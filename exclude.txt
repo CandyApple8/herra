@@ -1,0 +1,6 @@
+node_modules
+herra_release.exe
+exclude.txt
+users
+users_backup
+debug

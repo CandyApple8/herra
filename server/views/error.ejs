@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 💀</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .user {
+            animation: blink 1.5s infinite;
+            color: red;
+        }
+
+        .tt {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes forwards {}
+    </style>
+</head>
+
+<body>
+    <h1 class="tt">
+        error:
+        <span class="user"><%- errorMessage%></span>
+    </h1>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+const fs = require("fs");
+const { SlashCommandBuilder, PermissionsBitField } = require("discord.js");
+
+exports.main = (user) => 
+{
+
+}
+
+exports.mainS = (inter, ops) => 
+{
+    const user = ops[0]["value"]
+}
+
+exports.slash = new SlashCommandBuilder();

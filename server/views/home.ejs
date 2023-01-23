@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.200">
+
+    <link rel="icon" href="favicon (2).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Herra home</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPBBY4JKC2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GPBBY4JKC2');
+    </script>
+</head>
+
+<body>
+    <style>
+        li {
+            font-size: large;
+            color: green;
+        }
+    </style>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4719939888458370"
+        crossorigin="anonymous"></script>
+    <br>
+    <h1 class="tt">Hello, world!</h1>
+    <div class="side-panel">
+        <a class="button" href="/dashboard">Dashboard</a>
+        <a class="button" href="https://discord.gg/kGQSq4HFKJ">Discord</a>
+        <a class="button" href="/privacy">Privacy</a>
+    </div>
+
+    <div id="middle-panel">
+        <p style="color: green;">Member count:
+        <p style="color: red;"><%- client.guilds.cache.first().members.cache.size %></p>
+        </p>
+    </div>
+</body>
+
+</html>

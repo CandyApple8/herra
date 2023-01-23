@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification complete</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .user {
+            animation: blink 1.5s infinite;
+            color: red;
+        }
+
+        .tt {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes forwards {}
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            border: 0px solid black;
+            background-color: transparent;
+            height: 0px;
+            width: 0px;
+            color: #3498db;
+            font-size: 1.5em;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+
+    <script>
+        function runAway(event)
+        {
+            // Get the button and the mouse position
+            var button = event.target;
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            // Calculate the new button position
+            var buttonX = button.offsetLeft;
+            var buttonY = button.offsetTop;
+            var deltaX = buttonX - mouseX;
+            var deltaY = buttonY - mouseY;
+            var newX = buttonX + deltaX;
+            var newY = buttonY + deltaY;
+
+            // Set the new button position
+            button.style.left = newX + "px";
+            button.style.top = newY + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 class="tt">
+        User verified:
+        <span class="user"><%- user.username %></span>
+    </h1>
+    <br>
+    <h2 class="tt">You can close this page now, enjoy the server!</h2>
+</body>
+
+</html>

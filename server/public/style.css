@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: monospace;
+    text-align: center;
+}
+
+.tt {
+    animation: blink 1.5s infinite;
+    font-size: normal;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    #middle-panel {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left,
+#right {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+
+.side-panel {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    box-shadow: 0 0 20px rgba(19, 19, 19, 0.1);
+    border-radius: 2px;
+    border-color: red;
+}
+
+.hex-input {
+    color: green;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: rgb(40, 40, 40);
+    color: green;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: green;
+    background-color: rgb(0, 253, 0);
+    animation: blink 1s infinite;
+}
+
+.button::after {
+    size: 20px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btnDiscord {
+    border-radius: 20px;
+    color: green;
+    background-color: black;
+}
+
+input {
+    color: green;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+}
+
+input:hover {
+    cursor: pointer;
+    background-color: rgb(rgb(117, 117, 117), rgb(150, 150, 150), rgb(107, 107, 109));
+}
+
+label {
+    font-size: 15px;
+    text-align: left;
+}
+
+#notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    z-index: 1;
+}
+
+#middle-panel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^1.2.1",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "javascript-obfuscator": "^4.0.0",
+    "node-fetch": "^3.3.0",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.4",
+    "underscore": "^1.13.6"
+  },
+  "name": "herra",
+  "version": "1.0.0",
+  "description": "Private bot for my server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimitrije Mirkovic - Shux",
+  "license": "ISC"
+}
